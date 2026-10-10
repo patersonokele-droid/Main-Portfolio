@@ -12,8 +12,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Aura Studio",
-  description: "Bringing Ideas to Life",
+  title: "Paterson Okele | Full-Stack Web Developer & UI Engineer",
+  description: "Portfolio of Paterson Okele, a web developer crafting high-performance, responsive React & Next.js applications with modern interfaces and reliable web systems.",
   icons: {
     icon: '/images/favicon.jpg', // points to public/my-icon.png
   },

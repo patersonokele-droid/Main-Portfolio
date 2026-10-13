@@ -19,7 +19,7 @@ const projects = [
     alt: 'Moniepoint Clone project screenshot',
     description: 'Modern landing page showcasing creative financial services and brand presence.',
     tags: ['HTML', 'Tailwind CSS'],
-    href: '#',
+    href: 'https://moniepoint-replication.vercel.app/',
   },
   {
     title: 'Aura Studio',

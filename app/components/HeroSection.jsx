@@ -14,7 +14,7 @@ const projects = [
   {
     title: 'Moniepoint Clone',
     category: 'web',
-    label: 'Web app',
+    label: 'Web App',
     image: '/images/moniepoint-project.png',
     alt: 'Moniepoint Clone project screenshot',
     description: 'Modern landing page showcasing creative financial services and brand presence.',
@@ -24,7 +24,7 @@ const projects = [
   {
     title: 'Aura Studio',
     category: 'ecommerce',
-    label: 'E-commerce',
+    label: 'Web App',
     image: '/images/aura.png',
     alt: 'Aura Studio project screenshot',
     description: 'We shape thoughtful brands and digital experiences with clarity, character, and a little bit of magic.',
@@ -32,13 +32,13 @@ const projects = [
     href: 'https://aura-studio-fawn-five.vercel.app/',
   },
   {
-    title: 'Moniepoint Clone',
-    category: 'dashboard',
-    label: 'Dashboard',
-    image: '/images/moniepoint-project.png',
-    alt: 'Moniepoint Clone dashboard project screenshot',
-    description: 'Modern landing page showcasing creative financial services and brand presence.',
-    tags: ['HTML', 'Tailwind CSS'],
+    title: 'More Projects Coming Soon',
+    // category: 'dashboard',
+    // label: 'Dashboard',
+    // image: '/images/moniepoint-project.png',
+    // alt: 'Moniepoint Clone dashboard project screenshot',
+    // description: 'Modern landing page showcasing creative financial services and brand presence.',
+    tags: [''],
     href: '#',
   },
 ];
@@ -146,7 +146,7 @@ export default function HeroSection() {
           <div className="group relative order-1 mx-auto w-full max-w-[480px] lg:order-2 lg:ml-auto lg:mr-0">
             <div className="absolute -inset-5 -z-10 rounded-[2rem] bg-gradient-to-br from-amber-300/[0.12] via-transparent to-emerald-300/[0.06] blur-2xl" aria-hidden="true" />
             <div className="relative aspect-[0.93] overflow-hidden rounded-[1.5rem] border border-white/10 bg-[#121510] p-2 shadow-[0_28px_90px_rgba(0,0,0,0.42)] sm:aspect-[1.04] lg:aspect-[0.88]">
-              <ImageFrame src="/images/pat.jpg" alt="Paterson Okele" kind="portrait" className="h-full rounded-[1.05rem]" />
+              <ImageFrame src="/images/pat.jpeg" alt="Paterson Okele" kind="portrait" className="h-full rounded-[1.05rem]" />
               <div className="absolute inset-x-2 bottom-2 flex items-end justify-between rounded-b-[1.05rem] bg-gradient-to-t from-black/75 via-black/20 to-transparent px-5 pb-5 pt-16 sm:px-6 sm:pb-6">
                 <div>
                   <p className="font-display text-lg font-semibold tracking-tight text-white sm:text-xl">Paterson Okele</p>
@@ -154,10 +154,10 @@ export default function HeroSection() {
                 </div>
                 <span className="mb-0.5 inline-flex items-center gap-2 rounded-full border border-white/15 bg-black/25 px-3 py-1.5 text-[10px] text-stone-100 backdrop-blur-md"><span className="h-1.5 w-1.5 rounded-full bg-emerald-300" /> Available</span>
               </div>
-              <span className="pointer-events-none absolute right-5 top-5 font-mono text-[10px] tracking-[0.2em] text-white/45">01 / PROFILE</span>
+              <span className="pointer-events-none absolute right-5 top-5 font-mono text-[10px] tracking-[0.2em] text-white/45">PROFILE</span>
             </div>
             <div className="absolute -bottom-7 -left-3 hidden rounded-2xl border border-white/10 bg-[#11140f]/85 px-4 py-3 shadow-xl backdrop-blur-xl sm:block lg:-left-10">
-              <div className="flex items-center gap-3"><span className="grid h-9 w-9 place-items-center rounded-full border border-amber-200/15 bg-amber-200/[0.08] text-amber-100"><Check size={16} aria-hidden="true" /></span><div><p className="text-[11px] font-semibold text-stone-100">Built with care</p><p className="mt-0.5 text-[10px] text-stone-400">Thoughtful, scalable software</p></div></div>
+              <div className="flex items-center gap-3"><span className="grid h-9 w-9 place-items-center rounded-full border border-amber-200/15 bg-amber-200/[0.08] text-amber-100"><Check size={16} aria-hidden="true" /></span></div>
             </div>
           </div>
         </div>
@@ -219,13 +219,13 @@ export default function HeroSection() {
             <a href="#contact" className="inline-flex w-fit items-center gap-2 pb-1 text-[12px] font-medium text-stone-300 transition motion-reduce:transition-none hover:text-amber-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-200">Have a project in mind? <ArrowUpRight size={14} aria-hidden="true" /></a>
           </div>
 
-          <div className="mt-10 flex flex-wrap items-center gap-2" role="group" aria-label="Filter projects by category">
+          {/* <div className="mt-10 flex flex-wrap items-center gap-2" role="group" aria-label="Filter projects by category">
             {filters.map((filter) => {
               const selected = activeFilter === filter.value;
               return <button key={filter.value} type="button" aria-pressed={selected} onClick={() => setActiveFilter(filter.value)} className={`rounded-full border px-4 py-2 text-[11px] font-medium transition motion-reduce:transition-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-200 motion-reduce:transition-none ${selected ? 'border-amber-200/55 bg-amber-200/[0.12] text-amber-100' : 'border-white/10 text-stone-400 hover:border-white/25 hover:text-stone-200'}`}>{filter.label}</button>;
             })}
             <span className="ml-auto font-mono text-[10px] text-stone-400">{String(visibleProjects.length).padStart(2, '0')} projects</span>
-          </div>
+          </div> */}
 
           <div className="mt-6 grid gap-5 md:grid-cols-2 xl:grid-cols-3">
             {visibleProjects.map((project, index) => (
@@ -233,17 +233,17 @@ export default function HeroSection() {
                 <div className="relative aspect-[1.58] overflow-hidden border-b border-white/[0.07]">
                   <ImageFrame src={project.image} alt={project.alt} className="h-full" />
                   <div className="absolute left-4 top-4 flex items-center gap-2 rounded-full border border-white/15 bg-black/45 px-3 py-1.5 text-[9px] font-semibold uppercase tracking-[0.14em] text-stone-100 backdrop-blur-md"><span className="h-1.5 w-1.5 rounded-full bg-emerald-300" /> Live</div>
-                  <span className="absolute bottom-4 right-4 font-mono text-[9px] text-white/45">0{index + 1} / 0{projects.length}</span>
+                  {/* <span className="absolute bottom-4 right-4 font-mono text-[9px] text-white/45">0{index + 1} / 0{projects.length}</span> */}
                 </div>
                 <div className="flex min-h-[218px] flex-col p-5 sm:p-6">
                   <div className="flex items-start justify-between gap-4">
                     <div><p className="mb-2 text-[9px] font-semibold uppercase tracking-[0.18em] text-amber-200/70">{project.label}</p><h3 className="font-display text-lg font-semibold tracking-tight text-stone-100">{project.title}</h3></div>
-                    <span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/10 text-stone-400 transition motion-reduce:transition-none group-hover:border-amber-200/35 group-hover:text-amber-100" aria-hidden="true"><ArrowUpRight size={15} /></span>
+                   {/* <a href='ExternalLink'><span className="grid h-9 w-9 shrink-0 place-items-center rounded-full border border-white/10 text-stone-400 transition motion-reduce:transition-none group-hover:border-amber-200/35 group-hover:text-amber-100" aria-hidden="true"><ArrowUpRight size={15} /></span></a> */}
                   </div>
                   <p className="mt-3 flex-1 text-[12px] leading-6 text-stone-400">{project.description}</p>
                   <div className="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-white/[0.07] pt-4">
                     <div className="flex flex-wrap gap-1.5">{project.tags.map((tag) => <span key={tag} className="rounded-full border border-white/[0.08] px-2.5 py-1 text-[9px] text-stone-400">{tag}</span>)}</div>
-                    <a href={project.href} onClick={(event) => { if (project.href === '#') event.preventDefault(); }} aria-label={`Visit ${project.title}; destination not supplied`} title="The original portfolio did not include a destination URL" className="inline-flex shrink-0 items-center gap-1.5 text-[10px] font-medium text-amber-100/75 transition motion-reduce:transition-none hover:text-amber-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-200">Visit site <ExternalLink size={12} aria-hidden="true" /></a>
+                    <a href={project.href} target="_blank" rel="noopener noreferrer" onClick={(event) => { if (project.href === '#') event.preventDefault(); }} aria-label={`Visit ${project.title}; destination not supplied`} title="The original portfolio did not include a destination URL" className="inline-flex shrink-0 items-center gap-1.5 text-[10px] font-medium text-amber-100/75 transition motion-reduce:transition-none hover:text-amber-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-amber-200">Visit site <ExternalLink size={12} aria-hidden="true" /></a>
                   </div>
                 </div>
               </article>

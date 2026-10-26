@@ -32,14 +32,14 @@ const projects = [
     href: 'https://aura-studio-fawn-five.vercel.app/',
   },
   {
-    title: 'More Projects Coming Soon',
+    title: 'BrightEdge-Task-Manager',
     // category: 'dashboard',
     // label: 'Dashboard',
-    // image: '/images/moniepoint-project.png',
-    // alt: 'Moniepoint Clone dashboard project screenshot',
-    // description: 'Modern landing page showcasing creative financial services and brand presence.',
-    tags: [''],
-    href: '#',
+    image: '/images/Brighedge.png',
+    alt: ' BrightEdge-Task-Manager screenshot',
+    description: 'A clean, lightweight task manager built with Next.js and React. Add, complete, and delete tasks, with progress tracking and automatic saving in the browser.',
+    tags: ['Next.JS', 'React'],
+    href: 'https://brightedge-task-manager-tau.vercel.app/',
   },
 ];
 

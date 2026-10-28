@@ -37,7 +37,7 @@ const projects = [
     // label: 'Dashboard',
     image: '/images/Brighedge.png',
     alt: ' BrightEdge-Task-Manager screenshot',
-    description: 'A clean, lightweight task manager built with Next.js and React. Add, complete, and delete tasks, with progress tracking and automatic saving in the browser.',
+    description: 'A clean, lightweight task manager built with Next.js and React. Add, complete and delete tasks with progress tracking and automatic saving in the browser.',
     tags: ['Next.JS', 'React'],
     href: 'https://brightedge-task-manager-tau.vercel.app/',
   },
